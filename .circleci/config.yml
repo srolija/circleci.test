@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-  demonstration:
+  d:
     parameters:
       docker-version:
         type: string
@@ -17,7 +17,7 @@ jobs:
 workflows:
   all-dockers:
     jobs:
-      - demonstration:
+      - d:
           matrix:
             parameters:
               docker-version: 
