@@ -6,7 +6,7 @@ jobs:
       docker-version:
         type: string
     docker:
-    - image: circleci/python:3.7-stretch-node
+    - image: circleci/python:3.7.6-stretch-node
     steps:
     - setup_remote_docker:
           version: << parameters.docker-version >>
